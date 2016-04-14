@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Video Background</title>
-
+			
 	<style type="text/css">
 		*{
 			margin: 0;
@@ -61,14 +61,14 @@
 	</style>
 </head>
 <body>
-	<div class="background-wrap">
-		
-		<video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
-			<source src="video/galaxy.mp4" type="video/mp4">
-		</video>
-
-	</div>
-
+			<script type="text/javascript">
+				enlace = new Array();
+				enlace[0] = 'video/galaxy.mp4';
+				enlace[1] = 'video/NyanCat.mp4';
+				aleatorio = Math.random() * (enlace.length);
+				aleatorio = Math.floor(aleatorio);
+				document.write('<div class="background-wrap"><video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted"><source src="' + enlace[aleatorio] + '" type="video/mp4"</source></video></div>');
+			</script>
 	<div class="content">
 		
 		<h1>Universe</h1>
